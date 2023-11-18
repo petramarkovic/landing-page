@@ -1,0 +1,64 @@
+.footer {
+    width: 100%;
+    padding: 30px 0;
+    border-top: 1px solid $lighter-grey;
+}
+
+.footer__content {
+    @media screen and (min-width: $sm) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: $sm) {
+        text-align: center;
+    }
+}
+
+.footer__copy {
+    color: $light-grey;
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $sm) {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+}
+
+.footer__list-item {
+    &:not(:last-of-type) {
+        margin-right: 36px;
+    }
+    @media screen and (max-width: $sm) {
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+    }
+}
+
+.footer__list-link {
+    color: $light-grey;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+    padding-bottom: 4px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $gradient;
+        transition: width $transition;
+    }
+    @include hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
