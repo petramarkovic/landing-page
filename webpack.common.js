@@ -40,12 +40,6 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/index.html',
-			favicon: './src/assets/favicon.ico',
-		}),
-		new CopyPlugin({
-			patterns: [
-				{ from: 'src/robots.txt', to: 'robots.txt' },
-			  ],
 		}),
 		new MiniCssExtractPlugin({
 			filename: 'style.css',

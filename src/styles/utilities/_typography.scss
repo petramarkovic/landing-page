@@ -1,17 +1,35 @@
-// h1, h2, h3, h4, h5, h5,
-// .h1,
-// .h2,
-// .h3,
-// .h4,
-// .h5,
-// .h6 {
+h1, h2, h3 h4, h5, h6 {
+	font-family: $font-secondary;
+	font-weight: $bold;
+}
 
-// }
+h1, .h1 {
+	font-size: 170px;
+	line-height: 110%;
+	letter-spacing: -1.7px;
+}
 
-// .h1 {
+h2, .h2 {
+	font-size: 60px;
+	line-height: 140%;
+	letter-spacing: -0.6px;
+}
 
-// }
+h3, .h3 {
+	font-size: 40px;
+	line-height: 125%;
+	letter-spacing: -0.4px;
+}
 
-// .h2 {
+.text {
+	font-weight: $medium;
+	font-size: 16px;
+	line-height: 160%;
+}
 
-// }
+.text-lg {
+	font-weight: $regular;
+	font-size: 20px;
+	line-height: 145%;
+	letter-spacing: -0.1px;
+}
