@@ -44,3 +44,19 @@ h3, .h3 {
 	letter-spacing: -0.1px;
 	margin-bottom: 15px;
 }
+
+.tag {
+	font-family: $font-secondary;
+	font-weight: $bold;
+	background: $gradient;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 160%;
+	letter-spacing: 2.1px;
+	margin-bottom: 10px;
+	display: block;
+	text-transform: uppercase;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
