@@ -29,6 +29,24 @@
     }
 }
 
+.banner__col--media {
+    @media screen and (min-width: $sm) {
+        .banner__title {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $sm) {
+        position: relative;
+        .banner__title {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 0;
+        }
+    }
+}
+
 .banner__title {
     text-transform: uppercase;
 }
@@ -38,9 +56,17 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: $sm) {
+        display: none;
+    }
+}
+
+.banner__title-text--white {
+    color: $white;
 }
 
 .banner__text {
+    color: $light-grey;
     margin-bottom: 40px;
 }
 
