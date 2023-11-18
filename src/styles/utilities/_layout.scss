@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	scroll-behavior: smooth;
+	position: relative;
+}
+
+ul li,
+ol li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrap {
+	max-width: 1320px;
+	padding: 0 40px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.sr-only {
+	@include no-display;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.scroll-disabled {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
