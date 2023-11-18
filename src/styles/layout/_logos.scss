@@ -1,0 +1,42 @@
+.logos {
+    width: 100%;
+    padding: 50px 0;
+    @media screen and (max-width: $md) {
+        padding: 30px 0;
+    }
+}
+
+.logos__title {
+    text-align: center;
+}
+
+.logos__holder {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.logo {
+    opacity: 0.6;
+    flex: 1 1 20%;
+    max-width: 20%;
+    transition: $transition;
+    @media screen and (max-width: $md) {
+        flex: 1 1 50%;
+        max-width: 50%;
+    } 
+    @media screen and (max-width: $sm) {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    @include hover {
+        opacity: 1;
+    }
+}
+
+.logo__img {
+    margin: 0 auto;
+    display: block;
+    width: 170px;
+}
