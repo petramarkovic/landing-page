@@ -4,27 +4,34 @@ h1, h2, h3 h4, h5, h6 {
 }
 
 h1, .h1 {
-	font-size: 170px;
+	font-size: 104px;
 	line-height: 110%;
 	letter-spacing: -1.7px;
+	margin-bottom: 30px;
+	@media screen and (max-width: $md) {
+		font-size: 80px;
+	}
 }
 
 h2, .h2 {
 	font-size: 60px;
 	line-height: 140%;
 	letter-spacing: -0.6px;
+	margin-bottom: 20px;
 }
 
 h3, .h3 {
 	font-size: 40px;
 	line-height: 125%;
 	letter-spacing: -0.4px;
+	margin-bottom: 10px;
 }
 
 .text {
 	font-weight: $medium;
 	font-size: 16px;
 	line-height: 160%;
+	margin-bottom: 15px;
 }
 
 .text-lg {
@@ -32,4 +39,5 @@ h3, .h3 {
 	font-size: 20px;
 	line-height: 145%;
 	letter-spacing: -0.1px;
+	margin-bottom: 15px;
 }

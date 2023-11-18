@@ -9,7 +9,7 @@ body {
 	background-color: $white;
 	scroll-behavior: smooth;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 ul li,
@@ -24,6 +24,7 @@ a {
 
 img {
 	max-width: 100%;
+	object-fit: cover;
 }
 
 .wrap {

@@ -1,0 +1,49 @@
+.banner {
+    width: 100%;
+    padding: 50px 0;
+    @media screen and (max-width: $md) {
+        padding: 30px 0;
+    }
+}
+
+.banner__content {
+    display: flex;
+    @media screen and (min-width: $sm) {
+        align-items: center;
+    }
+    @media screen and (max-width: $sm) {
+        flex-direction: column-reverse;
+    }
+}
+
+.banner__col {
+    @media screen and (min-width: $sm) {
+        flex: 1 1 50%;
+        max-width: 50%;
+        &:not(.banner__col--media) {
+            padding-right: 80px;
+        }
+    }
+    @media screen and (max-width: $sm) {
+        text-align: center;
+    }
+}
+
+.banner__title {
+    text-transform: uppercase;
+}
+
+.banner__title-text--gradient {
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner__text {
+    margin-bottom: 40px;
+}
+
+.banner__img {
+    width: 100%;
+}
