@@ -1,5 +1,7 @@
 # A Landing Page Experience
 
+Check out the code on the develop branch!
+
 Welcome to a digital masterpiece, an exemplary landing page that seamlessly combines the artistry of HTML, SCSS, JavaScript, and the power of Webpack. This meticulously crafted showcase encapsulates the essence of your content, providing an immersive and captivating introduction to your brand or project.
 
 ## Features
