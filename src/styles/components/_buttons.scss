@@ -20,7 +20,7 @@ a {
 		width: 100%;
 		height: 100%;
 		border-radius: 12px;
-		z-index: -1;
+		z-index: 0;
 		background: $gradient;
 		transition: all $transition;
 	}
@@ -46,7 +46,57 @@ a {
 	}
 }
 
+.btn--white {
+	color: $black-secondary;
+	&::before {
+		background-color: $white;
+	}
+}
+
 .btn__text {
 	position: relative;
 	z-index: 2;
+}
+
+.link {
+	color: $white;
+	font-weight: $extra-bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 140%;
+	letter-spacing: 2.88px;
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+    padding-bottom: 4px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $gradient;
+        transition: width $transition;
+    }
+	@include hover {
+		&::after {
+			width: 100%;
+		}
+		.link__icon {
+			svg {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+.link__icon {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 10px;
+	svg {
+		transition: transform $transition;
+	}
 }

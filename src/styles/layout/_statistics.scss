@@ -34,7 +34,7 @@
 
 .statistics__num {
     font-weight: $bold;
-    -webkit-text-stroke-color: #4b34e4;
+    -webkit-text-stroke-color: $purple;
     -webkit-text-stroke-width: 2px;
     background: transparent;
     font-size: 70px;
@@ -46,7 +46,7 @@
 
 .statistics__sign {
     font-weight: $bold;
-    -webkit-text-stroke-color: #ee346b;
+    -webkit-text-stroke-color: $pink;
     -webkit-text-stroke-width: 2px;
     background: transparent;
     font-size: 70px;

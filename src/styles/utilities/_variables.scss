@@ -16,7 +16,9 @@ $black-secondary: #181818;
 $dark-grey: #262a2c;
 $light-grey: #666666;
 $lighter-grey: #bbbbbb;
-$gradient: linear-gradient(180deg, #4b34e4 0%, #ee346b 100%);
+$pink: #ee346b;
+$purple: #4b34e4;
+$gradient: linear-gradient(180deg, $purple 0%, $pink 100%);
 
 // transition
 $transition: 250ms ease-in-out;
