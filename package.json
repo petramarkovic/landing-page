@@ -25,6 +25,7 @@
     "webpack-merge": "^5.9.0"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.19"
+    "@studio-freight/lenis": "^1.0.19",
+    "countup.js": "^2.8.0"
   }
 }
