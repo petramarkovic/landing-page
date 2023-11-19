@@ -1,0 +1,39 @@
+.faq {
+    background-color: $black-secondary;
+    width: 100%;
+    padding: 80px 0;
+    @media screen and (max-width: $md) {
+        padding: 50px 0;
+    }
+}
+
+.faq__content {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $md) {
+        flex-direction: column-reverse;
+    }
+}
+
+.faq__col {
+    flex: 1 1 50%;
+    max-width: 50%;
+    @media screen and (max-width: $md) {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.faq__col--content {
+    @media screen and (min-width: $md) {
+        padding-left: 60px;
+    }
+}
+
+.faq__title {
+    color: $white;
+}
+
+.faq__text {
+    color: $lighter-grey;
+}
