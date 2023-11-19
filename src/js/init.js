@@ -2,6 +2,7 @@ import Lenis from '@studio-freight/lenis';
 import lazyLoad from './lazy-load.js';
 import header from './header.js';
 import counter from './counter.js';
+import slider from './slider.js';
 
 const init = {
 	init: function() {
@@ -24,6 +25,7 @@ const init = {
 			lazyLoad.init();
 			header.init();
 			counter.init();
+			slider.init();
 		});
 
 	}

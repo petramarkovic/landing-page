@@ -10,6 +10,7 @@ import './assets/images/features-image-1.jpg';
 import './assets/images/features-image-2.jpg';
 import './assets/images/features-image-3.jpg';
 import './assets/images/features-image-4.jpg';
+import './assets/images/testimonial-img.jpg';
 
 import init from './js/init';
 init.init();
